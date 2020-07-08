@@ -1,3 +1,3 @@
 # microbiome-climate-gradient
 
-**Applying [DEMENTpy](https://github.com/bioatmosphere/DEMENTpy) to a climate gradient to distangle relationships between community composition and functioning in soil microbial systems**
+**Applying [DEMENTpy](https://github.com/bioatmosphere/DEMENTpy) to a climate gradient to disentangle relationships between community composition and functioning in soil microbial systems**
