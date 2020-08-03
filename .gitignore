@@ -1,0 +1,10 @@
+
+.vscode/
+
+
+#literature
+literature/*.pdf
+
+# presentation
+climate_gradient.pptx
+
