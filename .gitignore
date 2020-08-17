@@ -1,6 +1,11 @@
 
 .vscode/
+.ipynb_checkpoints
+.RData
+.Rhistory
 
+#inputs
+inputs/site_information/literature
 
 #literature
 literature/*.pdf
