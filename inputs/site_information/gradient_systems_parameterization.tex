@@ -81,29 +81,30 @@ Longterm daily precipitation data were accessed from various sources for the fiv
 
 
 \subsection{Water Potential ($\psi$)}
-As there are no direct measurements of water potential ($\theta$; unit: MPa) at different sites across the gradient, an approximate method was applied. This approximation is based on the only available water potential data at the grassland site. With available measurements of water content ($\theta$; unit: g H\textsubscript{2}O g\textsuperscript{-1} wood), daily water potential was derived by Allison and Goulden (2017) at the grassland site for a record of $?????$. This derivation of water potential followed a conversion from water content to water potential as per the equation [Dix 1985, referenced in Allison and Goulden (2017)]:
+As there are no direct measurements of water potential ($\psi$; unit: MPa) at different sites across the gradient, an approximate method was applied. This approximation is based on the only available water potential data at the grassland site. With available measurements of water content ($\theta$; unit: g H\textsubscript{2}O g\textsuperscript{-1} wood), daily water potential was derived by \citet{allison2017consequences} at the grassland site for a record of $?????$. This derivation of water potential followed a conversion from water content to water potential as per the equation [Dix 1985, referenced in \citet{allison2017consequences}]:
 
 \begin{equation}
   \psi_{grassland} = -10^{0.118-0.114\log_{10} \theta}
 \end{equation}
 
-Water potential of all the other four sites ($\psi_{site}$) were derived by linearly scaling grassland site water potential ($\psi_{grassland}$) based on the Total Annual Precipitation(\textbf{TAP}) across the five sites following:
+Water potential of all the other four sites ($\psi_{site}$) were derived by linearly scaling grassland site water potential ($\psi_{grassland}$) based on the Total Annual Precipitation(\textbf{TAP}; unit: mm) at each site following:
 
 \begin{equation}
   \psi_{site} = \frac{TAP_{site}}{TAP_{grassland}} \psi_{grassland}
 \end{equation}
 
-One reason that make this approximate scaling legitimate is the same Mediterranean precipitation patterns (cool, wet winters; hot, dry summers) of the climate gradient.
+One condition that makes this approximate scaling legitimate is the same Mediterranean precipitation patterns across the climate gradient (cool, wet winters and hot, dry summers).
 
 \subsection{Temperature (\SI{}{\celsius})}
 Soil temperature data at a daily time step was used. These data were available at \url{https://github.com/stevenallison/UCIClimateExperiment/tree/master/updatednames}. 
 
 
 \section{\large Litter Chemistry and Input}
-
-Litter composition followed field measurements of chemistry at each site as presented in \citep{baker2017extracellular}. As per the observation by Baker and Allison (2017), standing litter pools are largest in the grassland and pine-oak site, reduced in the subalpine site, significantly reduced in the scrubland site, and negligible in the desert site.
-
-\textbf{Phospholipids} are a key component of all cell membranes(\url{https://en.wikipedia.org/wiki/Phospholipid}). In theory, it corresponds to OrgP1 in the model.
+DEMENTpy requires substrate-specific inputs in terms of C, N, and P (\textbf{Table xx}). \textbf{Phospholipids} (i.e.,OrgP1 in the model) are a key component of all cell membranes(\url{https://en.wikipedia.org/wiki/Phospholipid}). Though compound-specific stoichiometry is clear for determining concentration by element, substrate-specific concentration (($Sub_i$); unit: mg cm\textsuperscript{-3}) needs to be determined. This derivation followed:
+\begin{equation}
+  Sub_{s,i} = Fraction_{s,i} Total_s 
+\end{equation}
+where $s$ is one of the five sites, $i$ is one of the 10 substrates, $Fraction_{s,i}$ is the percentage of substrate $i$ in site $s$, and $Total_s$ is the total concentration of initial substrates (C+N+P) in site $s$.  $Fraction$ was informed by field measurements of litter chemistry at each site as presented in \citet{baker2017extracellular}. $Total$ was approximated by NPP at each site. As per the observation by \citet{baker2017extracellular}, standing litter pools are largest in the grassland and pine-oak site, reduced in the subalpine site, significantly reduced in the scrubland site, and negligible in the desert site.
 
 
 %\newpage
