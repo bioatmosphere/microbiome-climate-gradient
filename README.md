@@ -1,6 +1,6 @@
 # Microbiomes across a Climate Gradient
 
-**Applying [DEMENTpy](https://github.com/bioatmosphere/DEMENTpy) to a climate gradient in Southern California to disentangle mechanisms underpining relationships between community composition and functioning in soil microbial systems**
+**Applying [DEMENTpy](https://github.com/bioatmosphere/DEMENTpy) to the climate gradient in Southern California to disentangle mechanisms underpining relationships between community composition and functioning in soil microbial systems**
 
 
 ## inputs
