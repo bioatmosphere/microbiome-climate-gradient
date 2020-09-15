@@ -6,6 +6,15 @@
 
 #inputs
 inputs/site_information/literature
+inputs/site_information/*.synctex.gz
+inputs/site_information/*.out
+inputs/site_information/*.aux
+inputs/site_information/*.bbl
+inputs/site_information/*.blg
+inputs/site_information/*.fdb_latexmk
+inputs/site_information/*.fls
+inputs/site_information/*.log
+inputs/site_information/*.dvi
 
 #literature
 literature/*.pdf
