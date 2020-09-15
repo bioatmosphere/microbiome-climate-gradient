@@ -21,13 +21,11 @@
 \textsuperscript{1}Ecology and Evolutionary Biology, \textsuperscript{2}Earth System Science \\
 University of California Irvine\vspace{0em} \\
 Email: bwang7@uci.edu} 
-\date{\normalsize August, 2020\vspace{0em}}
+%\date{\normalsize August, 2020\vspace{0em}}
 \maketitle
 
 
-This document serves to detail how the DEMENTpy inputs were prepared for each of the five sites simulated across the climate gradient (\textbf{Figure 1}). In combination with the Jupyter Notebooks(.ipynb) provided, readers or those who are interested are supposed to be able to reproduce the preparation.
-
-In detail, inputs including water potential, soil temperature, and litter chemistry were processed and derived. Water potential was derived from precipitation via an intermediate step of converting the precipitation data. Code underlying all this processing is accessible at a GitHub Repo (\url{https://github.com/bioatmosphere/microbiome-climate-gradient.git}).
+This document details the preparation for DEMENTpy inputs at each of the five sites simulated across the climate gradient (\textbf{Figure 1}). In detail, inputs including water potential, soil temperature, and litter chemistry were processed and derived. Water potential was derived from precipitation via an intermediate step of converting the precipitation data. Code underlying all this processing is accessible at a GitHub Repo (\url{https://github.com/bioatmosphere/microbiome-climate-gradient.git}). In combination with the Jupyter Notebooks(.ipynb) provided, readers or those who are interested are supposed to be able to reproduce the preparation.
 
 % figure of the location of the five sites
 \begin{figure}[h]
@@ -96,8 +94,9 @@ Water potential of all the other four sites ($\psi_{site}$) were derived by line
 
 One condition that makes this approximate scaling legitimate is the same Mediterranean precipitation patterns across the climate gradient (cool, wet winters and hot, dry summers).
 
+
 \subsection{Temperature (\SI{}{\celsius})}
-Soil temperature data at a daily time step was used. These data were available at \url{https://github.com/stevenallison/UCIClimateExperiment/tree/master/updatednames}. 
+DEMENTpy is conceived using litter temperature at a daily resolution in principle. In practice, soil temperature is used instead to approximate the litter temperature. Soil temperature data across the gradient in each of five sites were measured. Details with regards to the measurement method, pre-, and post-processing are documented in \citet{glassman2018decomposition}. These measured soil temperature data at a sub-daily time step are available at \url{https://github.com/stevenallison/UCIClimateExperiment/tree/master/updatednames}. From these field measurements, daily soil temperature was derived by averaging all measurements in each day. A step-by-step demonstration of this derivation is presented in the Jupyter Notebook \textbf{\texttt{soil\_temperature.ipynb}}.
 
 
 \section{\large Litter Chemistry and Input}
@@ -105,7 +104,7 @@ DEMENTpy requires substrate-specific inputs in terms of C, N, and P (\textbf{Tab
 \begin{equation}
   Sub_{s,i} = Fraction_{s,i} Total_s 
 \end{equation}
-where $s$ is one of the five sites, $i$ is one of the 10 substrates, $Fraction_{s,i}$ is the percentage of substrate $i$ in site $s$, and $Total_s$ is the total concentration of initial substrates (C+N+P) in site $s$.  $Fraction$ was informed by field measurements of litter chemistry at each site as presented in \citet{baker2017extracellular}. $Total$ was approximated by NPP at each site. As per the observation by \citet{baker2017extracellular}, standing litter pools are largest in the grassland and pine-oak site, reduced in the subalpine site, significantly reduced in the scrubland site, and negligible in the desert site.
+where $s$ is one of the five sites, $i$ is one of the 10 substrates, $Fraction_{s,i}$ is the percentage of substrate $i$ in site $s$, and $Total_s$ is the total concentration of initial substrates (C+N+P) in site $s$.  $Fraction$ was informed by field measurements of litter chemistry at each site as presented in \citet{baker2017extracellular}. $Total$ was approximated by NPP at each site. As per the observation by \citet{baker2017extracellular}, standing litter pools are largest in the grassland and pine-oak site, reduced in the subalpine site, significantly reduced in the scrubland site, and negligible in the desert site. A detailed script implementing these processes is presented in the Jupyter Notebook \textbf{\texttt{litter\_chemistry\_v1.ipynb}}.
 
 
 %\newpage
