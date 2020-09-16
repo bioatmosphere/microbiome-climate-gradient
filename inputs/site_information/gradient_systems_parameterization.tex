@@ -80,13 +80,13 @@ Longterm daily precipitation data were accessed from various sources for the fiv
 
 
 \subsection{Water Potential ($\psi$)}
-As there are no direct measurements of water potential ($\psi$; unit: MPa) at different sites across the gradient, an approximate method was applied. This approximation is based on the only available water potential data at the grassland site. With available measurements of water content ($\theta$; unit: g H\textsubscript{2}O g\textsuperscript{-1} wood), daily water potential was derived by \citet{allison2017consequences} at the grassland site for a record of $?????$. This derivation of water potential followed a conversion from water content to water potential as per the equation [Dix 1985, referenced in \citet{allison2017consequences}]:
+As there are no direct measurements of water potential ($\psi$; unit: MPa) across the gradient, an approximation was applied. This approximation is based on the only available, indirectly derived water potential data at the grassland site. With available measurements of water content ($\theta$; unit: g H\textsubscript{2}O g\textsuperscript{-1} wood), daily water potential was derived by \citet{allison2017consequences} at the grassland site for a record of $?????$. This derivation of water potential followed a conversion from water content to water potential as per the equation [\citet{dix1985changes}, referenced in \citet{allison2017consequences}]:
 
 \begin{equation}
   \psi_{grassland} = -10^{0.118-0.114\log_{10} \theta}
 \end{equation}
 
-Water potential of all the other four sites ($\psi_{site}$) were derived by linearly scaling grassland site water potential ($\psi_{grassland}$) based on the Total Annual Precipitation(\textbf{TAP}; unit: mm) at each site following:
+Water potential of all the other four sites ($\psi_{site}$) were then derived by linearly scaling grassland site water potential ($\psi_{grassland}$) based on the Total Annual Precipitation(\textbf{TAP}; unit: mm) at each site following:
 
 \begin{equation}
   \psi_{site} = \frac{TAP_{site}}{TAP_{grassland}} \psi_{grassland}
