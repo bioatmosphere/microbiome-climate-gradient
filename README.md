@@ -5,8 +5,11 @@
 
 ## inputs
 -- 5 folders,each for one of the 5 sites:
+
 -- site_information:
+
 -- bash scripts dealing with data transfer between local and remote machine:
+
 ## data
 
 ## manuscript
