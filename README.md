@@ -4,11 +4,11 @@
 
 
 ## inputs
--- 5 folders,each for one of the 5 sites:
+- 5 folders for each of the 5 sites:
 
--- site_information:
+- site_information:
 
--- bash scripts dealing with data transfer between local and remote machine:
+- bash scripts dealing with data transfer between local and remote machine:
 
 ## data
 
