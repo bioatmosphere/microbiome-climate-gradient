@@ -3,21 +3,36 @@
 .ipynb_checkpoints
 .RData
 .Rhistory
+__pycache__
+*.synctex.gz
+*.out
+*.aux
+*.bbl
+*.blg
+*.fdb_latexmk
+*.fls
+*.log
+*.dvi
+
+#data
+gradient_v1/
+gradient_v2/
+gradient_v3/
+gradient_v4/
+
 
 #inputs
+inputs/desert/
+inputs/scrubland/
+inputs/grassland/
+inputs/pineoak/
+inputs/subalpine/
 inputs/site_information/literature
-inputs/site_information/*.synctex.gz
-inputs/site_information/*.out
-inputs/site_information/*.aux
-inputs/site_information/*.bbl
-inputs/site_information/*.blg
-inputs/site_information/*.fdb_latexmk
-inputs/site_information/*.fls
-inputs/site_information/*.log
-inputs/site_information/*.dvi
+inputs/site_information/documentation/delete.sh
+inputs/climate_hpc.sh
 
 #literature
-literature/*.pdf
+literature/
 
 # presentation
 climate_gradient.pptx
