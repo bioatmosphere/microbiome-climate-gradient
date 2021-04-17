@@ -1,8 +1,11 @@
-pulse	10
+pulse	4
 end_time	365
-x	10
-y	10
-gridsize	100
+switch	4
+interval	1
+dispersal	0
+x	100
+y	100
+gridsize	10000
 n_taxa	100
 fb	0.0
 taxa_per_box	0.01
@@ -24,4 +27,3 @@ Input_NH4	0
 Input_PO4	0
 direct	0.95
 dist	1
-interval	1

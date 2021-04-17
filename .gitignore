@@ -1,3 +1,4 @@
+.gitignore
 
 .vscode/
 .ipynb_checkpoints
@@ -36,4 +37,8 @@ literature/
 
 # presentation
 climate_gradient.pptx
+
+
+# writing
+writing/*.docx
 
