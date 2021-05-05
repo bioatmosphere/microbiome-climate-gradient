@@ -1,4 +1,4 @@
-# Microbiomes across a Climate Gradient
+# Soil Microbiomes' Strategies and Constraints
 
 **Applying [DEMENTpy](https://github.com/bioatmosphere/DEMENTpy) to a climate gradient in Southern California to disentangle trait-based mechanisms underpining relationships between community composition and functioning in soil microbial systems**
 
