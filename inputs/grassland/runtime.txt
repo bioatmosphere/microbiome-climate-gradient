@@ -1,4 +1,4 @@
-pulse	4
+pulse	8
 end_time	365
 switch	4
 interval	1
