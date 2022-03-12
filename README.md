@@ -1,4 +1,4 @@
-# Soil Microbiomes' Constraints, Tradeoffs, and Strategies 
+## Soil Microbiomes' Constraints, Tradeoffs, and Strategies 
 
 An application of DEMENTpy along a climate gradient in Southern California, USA.
 
@@ -23,3 +23,5 @@ To appear in **Frontiers in Ecology and Evolution**: [link](https://www.frontier
 Manuscript published 
 
 ## presentation
+
+Slides and a video for 2021 AGU presentation
