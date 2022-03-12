@@ -1,6 +1,6 @@
-pulse	8
+pulse	1
 end_time	365
-switch	4
+switch	5
 interval	1
 dispersal	0
 x	100

@@ -1,0 +1,3 @@
+Variables:prcp
+years:2011,2012,2013
+grassland_201113.csv, 33.737, -117.70

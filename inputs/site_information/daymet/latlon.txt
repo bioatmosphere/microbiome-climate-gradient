@@ -1,0 +1,7 @@
+Variables: tmin, tmax, prcp
+years: 2015,2016,2017,2018,2019
+desert.csv, 33.648, -116.38
+scrubland.csv, 33.610, -116.45
+grassland.csv, 33.737, -117.70
+pineoak.csv, 33.683, -116.77
+subalpine.csv, 33.823, -116.75
